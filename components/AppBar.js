@@ -37,17 +37,10 @@ const AppBar = () => {
 
       <Row>
         <Button>
-            <Feather
-              name="search"
-              size={29}
-              color="#000"
-            />
+          <Feather name="search" size={29} color="#000" />
         </Button>
         <Button>
-            <MaterialCommunityIcons
-               name="facebook-messenger"
-               size={29}
-            />
+          <MaterialCommunityIcons name="facebook-messenger" size={29} />
         </Button>
       </Row>
     </Container>
