@@ -52,41 +52,54 @@ const Separator = styled.View`
   height: 26px;
   background: #f0f0f0;
 `;
+
+const BottonDivider = styled.View`
+  width: 100%;
+  height: 9px;
+  background: #f0f2f5;
+`;
 const ToolBar = () => {
   return (
-    <Container>
-      <Row>
-        <Avatar source={user6} />
-        <Input placeholder="O que você está pensando?" />
-      </Row>
+    <>
+      <Container>
+        <Row>
+          <Avatar source={user6} />
+          <Input placeholder="O que você está pensando?" />
+        </Row>
 
-      <Divider />
+        <Divider />
 
-      <Row>
-        <Menu>
-          <Ionicons name="ios-videocam" size={22} color="#f44" />
-          <MenuText>Ao Vivo</MenuText>
-        </Menu>
+        <Row>
+          <Menu>
+            <Ionicons name="ios-videocam" size={22} color="#f44" />
+            <MenuText>Ao Vivo</MenuText>
+          </Menu>
 
-        <Separator />
+          <Separator />
 
-        <Menu>
-          <MaterialIcons
-            name="photo-size-select-actual"
-            size={20}
-            color="#acaf50"
-          />
-          <MenuText>Fotos</MenuText>
-        </Menu>
+          <Menu>
+            <MaterialIcons
+              name="photo-size-select-actual"
+              size={20}
+              color="#acaf50"
+            />
+            <MenuText>Fotos</MenuText>
+          </Menu>
 
-        <Separator />
+          <Separator />
 
-        <Menu>
-          <MaterialCommunityIcons name="video-plus" size={22} color="#e141fc" />
-          <MenuText>Sala</MenuText>
-        </Menu>
-      </Row>
-    </Container>
+          <Menu>
+            <MaterialCommunityIcons
+              name="video-plus"
+              size={22}
+              color="#e141fc"
+            />
+            <MenuText>Sala</MenuText>
+          </Menu>
+        </Row>
+      </Container>
+      <BottonDivider />
+    </>
   );
 };
 
