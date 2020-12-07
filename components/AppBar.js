@@ -33,7 +33,7 @@ const Button = styled.TouchableOpacity`
 const AppBar = () => {
   return (
     <Container>
-      <Text>facebook</Text>
+      <Text>faceclone</Text>
 
       <Row>
         <Button>
