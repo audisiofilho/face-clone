@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styled from "styled-components/native";
 import Avatar from "./Avatar";
-import { Entypo, AntDesign } from "@expo/vector-icons";
+import { Entypo, AntDesign, MaterialCommunityIcons } from "@expo/vector-icons";
 
 const Container = styled.View`
   flex: 1;
@@ -96,6 +96,12 @@ const Text = styled.Text`
   color: #424040;
 `;
 
+const BottonDivider = styled.View`
+  width: 100%;
+  height: 9px;
+  background: #f0f2f5;
+`;
+
 const Feed = () => {
   return (
     <>
@@ -127,7 +133,144 @@ const Feed = () => {
                 <TextCount>130 comentários</TextCount>
                 <TextCount>59 compartilhamentos</TextCount>
             </FooterCount>
+
+            <Separator/>
+            <FooterMenu>
+                <Button>
+                    <Icon>
+                        <AntDesign name="like2" size={20} color="424040" />
+                    </Icon>
+                    <Text>Curtir</Text>
+                </Button>
+
+                <Button>
+                    <Icon>
+                        <MaterialCommunityIcons name="comment-outline" size={20} color="424040" />
+                    </Icon>
+                    <Text>Comentar</Text>
+                </Button>
+
+                <Button>
+                    <Icon>
+                        <MaterialCommunityIcons name="share-outline" size={20} color="424040" />
+                    </Icon>
+                    <Text>Compartilhar</Text>
+                </Button>
+            </FooterMenu>
         </Footer>
+        <BottonDivider/>
+      </Container>
+
+      <Container>
+        <Header>
+          <Row>
+            <Avatar source={require("../assets/user3.jpg")} />
+          </Row>
+          <View style={{ marginRight: 185 }}>
+            <User>Christian Castro</User>
+            <Row>
+              <Time>18h</Time>
+              <Entypo name="dot-single" size={14} color="#747476" />
+              <Entypo name="globe" size={12} color="#747476" />
+            </Row>
+          </View>
+          <Entypo name="dots-three-horizontal" size={15} color="#222121" />
+        </Header>
+        <Post>Lorem ipsum dolor sit amet consectetur adipisi akjsdkjasdkjadsapsjd asijdaijsdasd asdjanjajsdasao</Post>
+        <Foto source={require('../assets/post2.jpg')}/>
+        <Footer>
+            <FooterCount>
+                <Row>
+                    <IconCount>
+                       <AntDesign name="like1" size={12} color="#ffffff" />
+                    </IconCount>
+                    <TextCount>409 curtidas</TextCount>
+                </Row>
+                <TextCount>160 comentários</TextCount>
+                <TextCount>89 compartilhamentos</TextCount>
+            </FooterCount>
+
+            <Separator/>
+            <FooterMenu>
+                <Button>
+                    <Icon>
+                        <AntDesign name="like2" size={20} color="424040" />
+                    </Icon>
+                    <Text>Curtir</Text>
+                </Button>
+
+                <Button>
+                    <Icon>
+                        <MaterialCommunityIcons name="comment-outline" size={20} color="424040" />
+                    </Icon>
+                    <Text>Comentar</Text>
+                </Button>
+
+                <Button>
+                    <Icon>
+                        <MaterialCommunityIcons name="share-outline" size={20} color="424040" />
+                    </Icon>
+                    <Text>Compartilhar</Text>
+                </Button>
+            </FooterMenu>
+        </Footer>
+        <BottonDivider/>
+      </Container>
+
+      <Container>
+        <Header>
+          <Row>
+            <Avatar source={require("../assets/user2.jpg")} />
+          </Row>
+          <View style={{ marginRight: 185 }}>
+            <User>Bruna Almeida</User>
+            <Row>
+              <Time>20m</Time>
+              <Entypo name="dot-single" size={14} color="#747476" />
+              <Entypo name="globe" size={12} color="#747476" />
+            </Row>
+          </View>
+          <Entypo name="dots-three-horizontal" size={15} color="#222121" />
+        </Header>
+        <Post>Lorem ipsum dolor sit amet consectetur adipisi akjsdkjasdkjadsapsjd asijdaijsdasd asdjanjajsdasao</Post>
+        <Foto source={require('../assets/user4.jpg')}/>
+        <Footer>
+            <FooterCount>
+                <Row>
+                    <IconCount>
+                       <AntDesign name="like1" size={12} color="#ffffff" />
+                    </IconCount>
+                    <TextCount>505 curtidas</TextCount>
+                </Row>
+                <TextCount>490 comentários</TextCount>
+                <TextCount>147 compartilhamentos</TextCount>
+            </FooterCount>
+
+            <Separator/>
+            <FooterMenu>
+                <Button>
+                    <Icon>
+                        <AntDesign name="like2" size={20} color="424040" />
+                    </Icon>
+                    <Text>Curtir</Text>
+                </Button>
+
+                <Button>
+                    <Icon>
+                        <MaterialCommunityIcons name="comment-outline" size={20} color="424040" />
+                    </Icon>
+                    <Text>Comentar</Text>
+                </Button>
+
+                <Button>
+                    <Icon>
+                        <MaterialCommunityIcons name="share-outline" size={20} color="424040" />
+                    </Icon>
+                    <Text>Compartilhar</Text>
+                </Button>
+            </FooterMenu>
+        </Footer>
+        <BottonDivider/>
       </Container>
     </>
   );
