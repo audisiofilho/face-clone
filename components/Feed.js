@@ -243,7 +243,7 @@ const Feed = () => {
                     <TextCount>505 curtidas</TextCount>
                 </Row>
                 <TextCount>490 comentários</TextCount>
-                <TextCount>147 compartilhamentos</TextCount>
+                <TextCount>149 compartilhamentos</TextCount>
             </FooterCount>
 
             <Separator/>
